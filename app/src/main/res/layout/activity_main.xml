@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- Switch for dark mode -->
+    <Switch
+        android:id="@+id/switch_dark_mode"
+        android:layout_width="67dp"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="314dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="14dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="395dp"
+        android:layout_height="345dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="54dp"
+        android:text="Kotlin is a modern, concise, and statically typed programming language officially supported by Google for Android development. It is fully interoperable with Java, offers features like null safety, and reduces boilerplate code, making it ideal for building robust and maintainable applications."
+        android:textSize="25dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="160dp"
+        android:layout_height="42dp"
+        android:textSize="25dp"
+        android:layout_above="@+id/textView"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="220dp"
+        android:layout_marginBottom="13dp"
+        android:text="About Kotlin" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="276dp"
+        android:layout_height="106dp"
+        android:layout_above="@+id/textView2"
+        android:layout_below="@+id/switch_dark_mode"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="76dp"
+        android:layout_marginEnd="57dp"
+        android:layout_marginBottom="27dp"
+        app:srcCompat="@drawable/kotlin" />
+
+</RelativeLayout>
